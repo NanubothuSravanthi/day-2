@@ -1,0 +1,31 @@
+while True:
+    print("1. Square")
+    print("2. Rectangle")
+    print("3. Circle")
+
+    print("4. Triangle")
+    print("5. Exit")
+    choice = int(input("Enter your choice: "))
+    if choice == 1:
+        side = float(input("Enter side: "))
+        area = side * side
+        print("Area:", area)
+    elif choice == 2:
+        length = float(input("Enter length: "))
+        breadth = float(input("Enter breadth: "))
+        area = length * breadth
+        print("Area:", area)
+    elif choice == 3:
+        radius = float(input("Enter radius: "))
+        area = 3.14 * radius * radius
+        print("Area:", area)
+    elif choice == 4:
+        base = float(input("Enter base: "))
+        height = float(input("Enter height: "))
+        area = 0.5 * base * height
+        print("Area:", area)
+    elif choice == 5:
+        print("Program Ended")
+        break
+    else:
+        print("Invalid Choice")
